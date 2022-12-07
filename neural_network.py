@@ -69,7 +69,7 @@ class Custom_Neural_Network:
         # Looping over number of layers
         for i in range(self.number_layers):
             # Setting current layer values
-            self.current_layer = self.current_layer // 2
+            self.current_layer = (self.current_layer + 1) // 2
             # Appending current layer to layers list
             self.layers.append(self.current_layer)
                 
